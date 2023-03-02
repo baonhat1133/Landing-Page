@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Figmaland</title>
+
+    <link href="https://fonts.cdnfonts.com/css/graphik" rel="stylesheet" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="wrap-header">
+          <div class="content-header">
+            <ul class="list-left-header ps-0">
+              <li class="link-header">
+                <a href="#">Home</a>
+              </li>
+              <li class="link-header">
+                <a href="#">Product</a>
+              </li>
+              <li class="link-header">
+                <a href="#pricing">Pricing</a>
+              </li>
+              <li class="link-header">
+                <a href="#footer">About</a>
+              </li>
+              <li class="link-header">
+                <a href="#contact-us">Contact</a>
+              </li>
+            </ul>
+            <ul class="list-right-header">
+              <li class="link-social">
+                <a href="#">
+                  <svg
+                    width="34"
+                    height="28"
+                    viewBox="0 0 34 28"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M33.6845 3.68535C32.4597 4.2137 31.1269 4.59394 29.754 4.74204C31.1793 3.89523 32.2467 2.55742 32.7559 0.979599C31.4184 1.77527 29.9531 2.33321 28.4251 2.62867C27.7865 1.94593 27.0141 1.40203 26.156 1.03086C25.298 0.659692 24.3727 0.469204 23.4379 0.471269C19.6554 0.471269 16.6134 3.53726 16.6134 7.2997C16.6134 7.82804 16.6775 8.35639 16.7815 8.86472C11.1179 8.56852 6.0666 5.86277 2.70842 1.72008C2.09652 2.76522 1.77587 3.95523 1.77981 5.16631C1.77981 7.53585 2.9846 9.62521 4.82179 10.854C3.7391 10.8114 2.68177 10.5138 1.73579 9.98544V10.0695C1.73579 13.3876 4.08131 16.1374 7.20734 16.7698C6.62039 16.9223 6.01659 17.0003 5.41017 17.002C4.96588 17.002 4.54561 16.958 4.12133 16.8979C4.98589 19.6037 7.50353 21.569 10.5015 21.633C8.15595 23.4702 5.21805 24.5509 2.02798 24.5509C1.4556 24.5509 0.927262 24.5309 0.378906 24.4668C3.40487 26.4081 6.9952 27.5288 10.8617 27.5288C23.4139 27.5288 30.2823 17.1301 30.2823 8.10422C30.2823 7.80803 30.2823 7.51184 30.2623 7.21565C31.5912 6.24301 32.7559 5.03823 33.6845 3.68535Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="link-social">
+                <a href="#">
+                  <svg
+                    width="42"
+                    height="42"
+                    viewBox="0 0 42 42"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M35.7517 4.98962H6.29255C5.58409 4.98962 5.01172 5.562 5.01172 6.27046V35.7296C5.01172 36.438 5.58409 37.0104 6.29255 37.0104H35.7517C36.4601 37.0104 37.0325 36.438 37.0325 35.7296V6.27046C37.0325 5.562 36.4601 4.98962 35.7517 4.98962ZM32.0533 14.3357H29.4956C27.4903 14.3357 27.1021 15.2883 27.1021 16.6892V19.7752H31.8892L31.2648 24.6064H27.1021V37.0104H22.1108V24.6104H17.9361V19.7752H22.1108V16.2129C22.1108 12.0782 24.6365 9.82476 28.3268 9.82476C30.096 9.82476 31.613 9.95685 32.0573 10.0169V14.3357H32.0533Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="link-social">
+                <a href="#">
+                  <svg
+                    width="42"
+                    height="42"
+                    viewBox="0 0 42 42"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M35.736 4.98962H6.27692C5.56847 4.98962 4.99609 5.562 4.99609 6.27046V35.7296C4.99609 36.438 5.56847 37.0104 6.27692 37.0104H35.736C36.4445 37.0104 37.0169 36.438 37.0169 35.7296V6.27046C37.0169 5.562 36.4445 4.98962 35.736 4.98962ZM14.4943 32.2753H9.74317V16.9934H14.4943V32.2753ZM12.1207 14.9041C11.5761 14.9041 11.0437 14.7425 10.5908 14.44C10.1379 14.1374 9.78498 13.7073 9.57655 13.2041C9.36812 12.7009 9.31359 12.1472 9.41984 11.613C9.5261 11.0789 9.78837 10.5882 10.1735 10.203C10.5586 9.81792 11.0493 9.55565 11.5835 9.4494C12.1177 9.34314 12.6714 9.39768 13.1745 9.6061C13.6777 9.81453 14.1078 10.1675 14.4104 10.6203C14.713 11.0732 14.8745 11.6056 14.8745 12.1503C14.8705 13.6713 13.6377 14.9041 12.1207 14.9041ZM32.2818 32.2753H27.5347V24.8425C27.5347 23.0694 27.5027 20.7919 25.0651 20.7919C22.5955 20.7919 22.2153 22.7211 22.2153 24.7144V32.2753H17.4722V16.9934H22.0271V19.0828H22.0912C22.7236 17.882 24.2726 16.6132 26.5861 16.6132C31.3972 16.6132 32.2818 19.7792 32.2818 23.8939V32.2753Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="logo-header">
+            <img src="./assets/images/logo.svg" alt="logo" />
+          </div>
+          <div class="btn-header">
+            <div class="btn-nav"></div>
+            <div class="btn-nav"></div>
+            <div class="btn-nav"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Banner -->
+    <section class="banner" id="banner">
+      <div class="container">
+        <div class="wrap-content-banner text-center">
+          <div class="text-banner">
+            <h1 data-aos="fade-up" data-aos-duration="1000">
+              The best products start with Figma
+            </h1>
+            <h4 data-aos="fade-up" data-aos-duration="800">
+              Most calendars are designed for teams. Slate is designed for
+              freelancers
+            </h4>
+          </div>
+          <button class="btn-custom btn-banner text-center">
+            Try For Free
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature -->
+    <section class="features" id="features">
+      <div class="container">
+        <div class="text-title text-center">
+          <h2 data-aos="fade-up" data-aos-duration="1000">Features</h2>
+          <h4
+            class="mb-lg-97 px-76 px-md-0"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            Most calendars are designed for teams.
+            <span> Slate is designed for freelancers</span>
+          </h4>
+        </div>
+        <div class="features-content d-flex flex-column d-lg-block">
+          <div
+            class="row order-lg-0 order-2"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <div class="card-custom col-12 col-lg-4">
+              <span>
+                <svg
+                  width="47"
+                  height="47"
+                  viewBox="0 0 47 47"
+                  fill="none"
+                  fill
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.6042 0.625C18.3117 0.625 21.8673 2.0978 24.4889 4.7194C27.1105 7.34101 28.5833 10.8967 28.5833 14.6042C28.5833 17.9846 27.3888 21.0854 25.3808 23.5H46.375V46.375H23.5V25.3808C21.0854 27.3888 17.9846 28.5833 14.6042 28.5833C10.8967 28.5833 7.34101 27.1105 4.7194 24.4889C2.0978 21.8673 0.625 18.3117 0.625 14.6042C0.625 10.8967 2.0978 7.34101 4.7194 4.7194C7.34101 2.0978 10.8967 0.625 14.6042 0.625V0.625Z"
+                    fill="#2091F9"
+                  />
+                </svg>
+              </span>
+              <h3>OpenType features Variable fonts</h3>
+              <p>
+                Slate helps you see how many more days you need to work to reach
+                your financial goal.
+              </p>
+            </div>
+            <div class="card-custom col-12 col-lg-4">
+              <span>
+                <svg
+                  width="57"
+                  height="56"
+                  viewBox="0 0 57 56"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M23.2486 48.65C27.402 47.0167 26.492 42.5134 24.392 39.6667C22.3153 36.75 19.4453 34.7434 16.552 32.8067C14.4876 31.5055 12.6443 29.8829 11.092 28C10.4386 27.23 9.10863 25.8067 10.462 25.5267C11.8386 25.2467 14.2186 26.6 15.432 27.1134C17.5553 28 19.6553 29.0267 21.6153 30.24L23.972 26.2734C20.332 23.87 15.6653 21.7467 11.3253 21.1167C8.85197 20.7434 6.23863 21.2567 5.39863 23.94C4.65197 26.25 5.84197 28.5834 7.1953 30.4034C10.392 34.6734 15.362 36.7267 19.072 40.4134C19.8653 41.1834 20.822 42.0934 21.2886 43.1667C21.7786 44.1934 21.662 44.2634 20.5653 44.2634C17.672 44.2634 14.0553 42 11.6986 40.5067L9.34197 44.4734C12.912 46.6667 18.8853 50.0967 23.2486 48.65ZM49.1253 12.25C49.6386 11.7367 49.6386 10.8967 49.1253 10.4067L46.092 7.37337C45.8476 7.13783 45.5214 7.00623 45.182 7.00623C44.8425 7.00623 44.5164 7.13783 44.272 7.37337L41.892 9.75337L46.7453 14.6067L49.1253 12.25ZM26.1653 25.48V30.3334H31.0186L45.3686 15.9834L40.5153 11.13L26.1653 25.48Z"
+                    fill="#2091F9"
+                  />
+                </svg>
+              </span>
+              <h3>Design with real data</h3>
+              <p>
+                Slate helps you see how many more days you need to work to reach
+                your financial goal.
+              </p>
+            </div>
+            <div class="card-custom col-12 col-lg-4">
+              <span>
+                <svg
+                  width="49"
+                  height="47"
+                  viewBox="0 0 49 47"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M47.6366 4.76792L44.2308 1.36209C43.2904 0.37084 41.6383 0.37084 40.647 1.36209L17.8737 24.1354L24.8633 31.125L47.6366 8.35167C48.6279 7.36042 48.6279 5.70834 47.6366 4.76792V4.76792ZM12.7904 28.5833C10.7681 28.5833 8.82864 29.3867 7.39868 30.8166C5.96871 32.2466 5.16536 34.1861 5.16536 36.2083C5.16536 39.5379 2.21703 41.2917 0.0820312 41.2917C2.42036 44.3925 6.4362 46.375 10.2487 46.375C12.9451 46.375 15.531 45.3039 17.4376 43.3973C19.3442 41.4906 20.4154 38.9047 20.4154 36.2083C20.4154 34.1861 19.612 32.2466 18.1821 30.8166C16.7521 29.3867 14.8126 28.5833 12.7904 28.5833Z"
+                    fill="#2091F9"
+                  />
+                </svg>
+              </span>
+              <h3>Fastest way to take action</h3>
+              <p>
+                Slate helps you see how many more days you need to work to reach
+                your financial goal.
+              </p>
+            </div>
+          </div>
+          <div class="wrap-img order-lg-0 order-1">
+            <div class="features-img">
+              <img src="./assets/images/img-features.png" alt="human-read" />
+              <div class="btn-play"></div>
+              <div class="btn-play-triangle">
+                <svg
+                  width="40"
+                  height="48"
+                  viewBox="0 0 40 48"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.402344 0.593994L39.4434 24.0186L0.402344 47.4432V0.593994Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Fastest -->
+    <section id="fastest">
+      <div class="container">
+        <div class="content-fastest d-flex flex-column flex-lg-row">
+          <div
+            class="text-title text-fastest d-flex align-items-center d-lg-block"
+          >
+            <h2
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              class="text-center text-lg-start"
+            >
+              Fastest way to organize
+            </h2>
+            <h4
+              class="wrap-text-fastest text-center text-lg-start"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
+              Most calendars are designed for teams.
+              <span> Slate is designed for freelancers</span>
+            </h4>
+            <div class="wrap-btn">
+              <button class="btn-custom">Try For Free</button>
+            </div>
+          </div>
+          <div class="img-fastest" data-aos="fade-up" data-aos-duration="3000">
+            <img src="./assets/images/laptop.png" alt="laptop" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Lightning -->
+    <section id="lightning ">
+      <div class="container">
+        <div class="wrap-content-lightning">
+          <div
+            class="text-title text-center d-block d-lg-none"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <h3 class="text-h3-lightning">At your fingertips</h3>
+            <h2>Newsletter</h2>
+            <h4 class="mb-lg-97 px-76 px-md-0">
+              Most calendars are designed for teams. Slate is designed for
+              freelancers
+            </h4>
+          </div>
+          <div class="content-lightning d-flex flex-column flex-lg-row">
+            <div
+              class="img-lightning"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <img
+                src="./assets/images/lightning-img.png"
+                alt="lightning-img"
+              />
+            </div>
+            <div
+              class="text-title text-lightning text-center"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
+              <h3 class="d-none d-lg-block">At your fingertips</h3>
+              <h2 class="d-none d-lg-block">Lightning fast prototyping</h2>
+              <h3>Subscribe to our Newsletter</h3>
+              <p>Available exclusivery on Figmaland</p>
+              <div class="input-lightning">
+                <input
+                  type="text"
+                  class="input-custom"
+                  placeholder="Your Email"
+                />
+                <button class="btn-custom btn-lightning">Subscribe</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Partners -->
+    <div id="partner">
+      <div class="container">
+        <div class="content-partners">
+          <div
+            class="text-title text-partner text-center"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <h2>Partners</h2>
+            <h4>
+              Most calendars are designed for teams. Slate is designed for
+              freelancers
+            </h4>
+          </div>
+          <div class="list-partners">
+            <div
+              class="row gap-4 gap-lg-0"
+              data-aos="fade-up"
+              data-aos-duration="2500"
+            >
+              <div class="content-partner col-12 col-lg-3">
+                <h5>Client Name</h5>
+                <div class="logo-partner">
+                  <img src="./assets/images/google.png" alt="logo google" />
+                </div>
+              </div>
+              <div class="content-partner col-12 col-lg-3">
+                <h5>Client Name</h5>
+                <div class="logo-partner">
+                  <img src="./assets/images/amazon.png" alt="logo google" />
+                </div>
+              </div>
+              <div class="content-partner col-12 col-lg-3">
+                <h5>Client Name</h5>
+                <div class="logo-partner">
+                  <img src="./assets/images/microsoft.png" alt="logo google" />
+                </div>
+              </div>
+              <div class="content-partner col-12 col-lg-3">
+                <h5>Client Name</h5>
+                <div class="logo-partner">
+                  <img src="./assets/images/uber.png" alt="logo google" />
+                </div>
+              </div>
+              <div class="content-partner col-12 col-lg-3">
+                <h5>Client Name</h5>
+                <div class="logo-partner">
+                  <img src="./assets/images/dropbox.png" alt="logo google" />
+                </div>
+              </div>
+              <div class="content-partner col-12 col-lg-3">
+                <h5>Client Name</h5>
+                <div class="logo-partner">
+                  <img src="./assets/images/google.png" alt="logo google" />
+                </div>
+              </div>
+              <div class="content-partner col-12 col-lg-3">
+                <h5>Client Name</h5>
+                <div class="logo-partner">
+                  <img src="./assets/images/uber.png" alt="logo google" />
+                </div>
+              </div>
+              <div class="content-partner col-12 col-lg-3">
+                <h5>Client Name</h5>
+                <div class="logo-partner">
+                  <img src="./assets/images/amazon.png" alt="logo google" />
+                </div>
+              </div>
+            </div>
+            <div class="wrap-btn">
+              <button class="btn-custom">Try For Free</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonials -->
+    <section id="testimonials">
+      <div class="container">
+        <div class="text-testimonials text-title text-center">
+          <h2 data-aos="fade-up" data-aos-duration="1000">Testimonials</h2>
+          <div
+            class="img-testimonials"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <img src="./assets/images/ibm.png" alt="IBM" />
+          </div>
+          <h4 data-aos="fade-up" data-aos-duration="3000">
+            Most calendars are designed for teams. Slate is designed for
+            freelancers who want a simple way to plan their schedule.
+          </h4>
+          <div class="wrap-avatar" data-aos="fade-up" data-aos-duration="2000">
+            <div class="img-avatar">
+              <img src="./assets/images/avatar.png" alt="avatar" />
+            </div>
+            <div class="content-avatar">
+              <h5>Organize across</h5>
+              <a class="nav-link p-0" href="#">Ui designer</a>
+            </div>
+          </div>
+          <div class="wrap-btn">
+            <button class="btn-custom btn-testimonials">
+              More Testimonials
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Pricing -->
+    <section class="pricing" id="pricing">
+      <div class="container">
+        <div class="content-pricing">
+          <div
+            class="text-title text-pricing text-center"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <h2 class="txt-h">Pricing</h2>
+            <h4 class="txt-h">Most calendars are designed for teams.</h4>
+          </div>
+          <div
+            class="row justify-content-center"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div class="col-10 col-lg-4">
+              <div class="card-pricing">
+                <div class="content-card-pricing">
+                  <h3 class="txt-h">FREE</h3>
+                  <h5 class="txt-h">Organize across all apps by hand</h5>
+                  <div class="price-month">
+                    <h1 class="txt-h">0</h1>
+                    <div class="right-price-month">
+                      <h3 class="txt-h">$</h3>
+                      <h5 class="txt-h">Per Month</h5>
+                    </div>
+                  </div>
+                  <ul class="list-pricings">
+                    <li><a href="#" class="txt-link">Pricing Feature</a></li>
+                    <li><a href="#" class="txt-link">Pricing Feature</a></li>
+                    <li><a href="#" class="txt-link">Pricing Feature</a></li>
+                    <li><a href="#" class="txt-link">Pricing Feature</a></li>
+                    <li><a href="#" class="txt-link">Pricing Feature</a></li>
+                  </ul>
+                  <div class="wrap-btn">
+                    <button class="btn-custom">Order Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-10 col-lg-4">
+              <div class="card-pricing">
+                <div class="content-card-pricing">
+                  <h3 class="txt-h">STANDARD</h3>
+                  <h5 class="txt-h">Organize across all apps by hand</h5>
+                  <div class="price-month">
+                    <h1 class="txt-h">10</h1>
+                    <div class="right-price-month">
+                      <h3 class="txt-h">$</h3>
+                      <h5 class="txt-h">Per Month</h5>
+                    </div>
+                  </div>
+                  <ul class="list-pricings">
+                    <li><a href="#" class="txt-link">Pricing Feature</a></li>
+                    <li><a href="#" class="txt-link">Pricing Feature</a></li>
+                    <li><a href="#" class="txt-link">Pricing Feature</a></li>
+                    <li><a href="#" class="txt-link">Pricing Feature</a></li>
+                    <li><a href="#" class="txt-link">Pricing Feature</a></li>
+                  </ul>
+                  <div class="wrap-btn">
+                    <button class="btn-custom">Order Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-10 col-lg-4">
+              <div class="card-pricing">
+                <div class="content-card-pricing">
+                  <h3 class="txt-h">BUSINESS</h3>
+                  <h5 class="txt-h">Organize across all apps by hand</h5>
+                  <div class="price-month">
+                    <h1 class="txt-h">99</h1>
+                    <div class="right-price-month">
+                      <h3 class="txt-h">$</h3>
+                      <h5 class="txt-h">Per Month</h5>
+                    </div>
+                  </div>
+                  <ul class="list-pricings">
+                    <li><a href="#" class="txt-link">Pricing Feature</a></li>
+                    <li><a href="#" class="txt-link">Pricing Feature</a></li>
+                    <li><a href="#" class="txt-link">Pricing Feature</a></li>
+                    <li><a href="#" class="txt-link">Pricing Feature</a></li>
+                    <li><a href="#" class="txt-link">Pricing Feature</a></li>
+                  </ul>
+                  <div class="wrap-btn">
+                    <button class="btn-custom">Order Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ContactUs -->
+    <section class="contact-us" id="contact-us">
+      <div class="container">
+        <div class="content-main-contact-us">
+          <div
+            class="text-title text-center mb-75 mb-lg-97"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <h2>Contact Us</h2>
+            <h4>
+              Most calendars are designed for teams. Slate is designed for
+              freelancers
+            </h4>
+          </div>
+          <div class="content-contact-us">
+            <div
+              class="left-contact-us order-2 order-lg-0"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
+              <h3>Contact Us</h3>
+              <div class="input-group-custom">
+                <input
+                  class="input-custom"
+                  type="text"
+                  placeholder="Your Name"
+                />
+              </div>
+              <div class="input-group-custom">
+                <input
+                  class="input-custom"
+                  type="text"
+                  placeholder="Your Email"
+                />
+              </div>
+              <div class="input-group-custom">
+                <textarea
+                  class="input-textarea-custom"
+                  type="text"
+                  placeholder="Your Message"
+                ></textarea>
+              </div>
+              <button class="btn-custom btn-send">Send</button>
+            </div>
+            <div
+              class="right-contact-us d-flex d-lg-block flex-column order-1 order-lg-0"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
+              <div class="row order-3 order-lg-0 px-3 px-sm-0">
+                <div
+                  class="card-contact-us mb-lg-70 d-flex justify-content-lg-center align-items-center justify-content-start d-lg-block col-12 col-lg-4 pt-20"
+                >
+                  <div class="icon-map">
+                    <svg
+                      width="26"
+                      height="33"
+                      viewBox="0 0 26 33"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_67_7924)">
+                        <path
+                          d="M13.0013 19.884C16.4941 19.884 19.3346 17.0435 19.3346 13.5506C19.3346 10.0578 16.4941 7.21729 13.0013 7.21729C9.50847 7.21729 6.66797 10.0578 6.66797 13.5506C6.66797 17.0435 9.50847 19.884 13.0013 19.884ZM13.0013 10.384C14.7477 10.384 16.168 11.8042 16.168 13.5506C16.168 15.297 14.7477 16.7173 13.0013 16.7173C11.2549 16.7173 9.83464 15.297 9.83464 13.5506C9.83464 11.8042 11.2549 10.384 13.0013 10.384Z"
+                          fill="#2091F9"
+                        />
+                        <path
+                          d="M11.7485 32.256C12.0164 32.4473 12.3375 32.5502 12.6668 32.5502C12.9961 32.5502 13.3172 32.4473 13.5851 32.256C14.0665 31.9155 25.3794 23.7471 25.3335 13.5505C25.3335 6.56637 19.6509 0.883789 12.6668 0.883789C5.68272 0.883789 0.000139393 6.56637 0.000139393 13.5425C-0.0457773 23.7471 11.2671 31.9155 11.7485 32.256ZM12.6668 4.05046C17.9061 4.05046 22.1668 8.31121 22.1668 13.5584C22.2001 20.5852 15.2191 26.8948 12.6668 28.9642C10.1161 26.8932 3.13356 20.582 3.16681 13.5505C3.16681 8.31121 7.42756 4.05046 12.6668 4.05046Z"
+                          fill="#2091F9"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_67_7924">
+                          <rect
+                            width="26"
+                            height="32"
+                            fill="white"
+                            transform="translate(0 0.717285)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <h5 class="text-start text-lg-center">
+                    <a href="">
+                      6386 Spring St undefined Anchorage, Georgia 12473 United
+                      States</a
+                    >
+                  </h5>
+                </div>
+                <div
+                  class="card-contact-us mb-lg-70 d-flex justify-content-start align-items-center d-lg-block col-12 col-lg-4 pt-20"
+                >
+                  <div class="icon-phone">
+                    <svg
+                      width="22"
+                      height="35"
+                      viewBox="0 0 22 35"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_67_7930)">
+                        <path
+                          d="M16.5417 1.17578H4.875C2.45417 1.17578 0.5 3.12995 0.5 5.55078V28.8841C0.5 31.3049 2.45417 33.2591 4.875 33.2591H16.5417C18.9625 33.2591 20.9167 31.3049 20.9167 28.8841V5.55078C20.9167 3.12995 18.9625 1.17578 16.5417 1.17578ZM13.625 30.3424H7.79167V28.8841H13.625V30.3424ZM18.3646 25.9674H3.05208V5.55078H18.3646V25.9674Z"
+                          fill="#2091F9"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_67_7930">
+                          <rect
+                            width="21"
+                            height="34"
+                            fill="white"
+                            transform="translate(0.5 0.217285)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <h5><a href="tel:0213232132321">(843) 555-0130</a></h5>
+                </div>
+                <div
+                  class="card-contact-us mb-lg-70 d-flex justify-content-lg-center align-items-center justify-content-start d-lg-block col-12 col-lg-4 pt-20"
+                >
+                  <div class="icon-mail">
+                    <svg
+                      width="27"
+                      height="22"
+                      viewBox="0 0 27 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M25.8125 0.904785H1.4375C0.918945 0.904785 0.5 1.32373 0.5 1.84229V20.5923C0.5 21.1108 0.918945 21.5298 1.4375 21.5298H25.8125C26.3311 21.5298 26.75 21.1108 26.75 20.5923V1.84229C26.75 1.32373 26.3311 0.904785 25.8125 0.904785ZM24.6406 4.15088V19.4204H2.60938V4.15088L1.80078 3.521L2.95215 2.0415L4.20605 3.01709H23.0469L24.3008 2.0415L25.4521 3.521L24.6406 4.15088ZM23.0469 3.01416L13.625 10.3384L4.20312 3.01416L2.94922 2.03857L1.79785 3.51807L2.60645 4.14795L12.6143 11.9292C12.9021 12.1528 13.2561 12.2742 13.6206 12.2742C13.9851 12.2742 14.3391 12.1528 14.627 11.9292L24.6406 4.15088L25.4492 3.521L24.2979 2.0415L23.0469 3.01416Z"
+                        fill="#2091F9"
+                      />
+                    </svg>
+                  </div>
+
+                  <h5>
+                    <a href="mailto:nhat@gmail.com"
+                      >willie.jennings@example.com</a
+                    >
+                  </h5>
+                </div>
+              </div>
+              <div class="map d-none d-lg-block">
+                <img src="./assets/images/map_screen.png" alt="map_screen" />
+              </div>
+              <ul
+                class="navbar-nav d-flex flex-row justify-content-center justify-content-lg-start mt-lg-75 mb-92 mb-lg-0 order-1 order-lg-0"
+              >
+                <li class="nav-item">
+                  <a class="nav-link social-icons" href="#"
+                    ><svg
+                      width="34"
+                      height="28"
+                      viewBox="0 0 34 28"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M33.6845 3.68535C32.4597 4.2137 31.1269 4.59394 29.754 4.74204C31.1793 3.89523 32.2467 2.55742 32.7559 0.979599C31.4184 1.77527 29.9531 2.33321 28.4251 2.62867C27.7865 1.94593 27.0141 1.40203 26.156 1.03086C25.298 0.659692 24.3727 0.469204 23.4379 0.471269C19.6554 0.471269 16.6134 3.53726 16.6134 7.2997C16.6134 7.82804 16.6775 8.35639 16.7815 8.86472C11.1179 8.56852 6.0666 5.86277 2.70842 1.72008C2.09652 2.76522 1.77587 3.95523 1.77981 5.16631C1.77981 7.53585 2.9846 9.62521 4.82179 10.854C3.7391 10.8114 2.68177 10.5138 1.73579 9.98544V10.0695C1.73579 13.3876 4.08131 16.1374 7.20734 16.7698C6.62039 16.9223 6.01659 17.0003 5.41017 17.002C4.96588 17.002 4.54561 16.958 4.12133 16.8979C4.98589 19.6037 7.50353 21.569 10.5015 21.633C8.15595 23.4702 5.21805 24.5509 2.02798 24.5509C1.4556 24.5509 0.927262 24.5309 0.378906 24.4668C3.40487 26.4081 6.9952 27.5288 10.8617 27.5288C23.4139 27.5288 30.2823 17.1301 30.2823 8.10422C30.2823 7.80803 30.2823 7.51184 30.2623 7.21565C31.5912 6.24301 32.7559 5.03823 33.6845 3.68535Z"
+                        fill="#2091f9"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="social-icons" href="#"
+                    ><svg
+                      width="42"
+                      height="42"
+                      viewBox="0 0 42 42"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M35.7517 4.98962H6.29255C5.58409 4.98962 5.01172 5.562 5.01172 6.27046V35.7296C5.01172 36.438 5.58409 37.0104 6.29255 37.0104H35.7517C36.4601 37.0104 37.0325 36.438 37.0325 35.7296V6.27046C37.0325 5.562 36.4601 4.98962 35.7517 4.98962ZM32.0533 14.3357H29.4956C27.4903 14.3357 27.1021 15.2883 27.1021 16.6892V19.7752H31.8892L31.2648 24.6064H27.1021V37.0104H22.1108V24.6104H17.9361V19.7752H22.1108V16.2129C22.1108 12.0782 24.6365 9.82476 28.3268 9.82476C30.096 9.82476 31.613 9.95685 32.0573 10.0169V14.3357H32.0533Z"
+                        fill="#2091f9"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="social-icons" href="#"
+                    ><svg
+                      width="42"
+                      height="42"
+                      viewBox="0 0 42 42"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M35.736 4.98962H6.27692C5.56847 4.98962 4.99609 5.562 4.99609 6.27046V35.7296C4.99609 36.438 5.56847 37.0104 6.27692 37.0104H35.736C36.4445 37.0104 37.0169 36.438 37.0169 35.7296V6.27046C37.0169 5.562 36.4445 4.98962 35.736 4.98962ZM14.4943 32.2753H9.74317V16.9934H14.4943V32.2753ZM12.1207 14.9041C11.5761 14.9041 11.0437 14.7425 10.5908 14.44C10.1379 14.1374 9.78498 13.7073 9.57655 13.2041C9.36812 12.7009 9.31359 12.1472 9.41984 11.613C9.5261 11.0789 9.78837 10.5882 10.1735 10.203C10.5586 9.81792 11.0493 9.55565 11.5835 9.4494C12.1177 9.34314 12.6714 9.39768 13.1745 9.6061C13.6777 9.81453 14.1078 10.1675 14.4104 10.6203C14.713 11.0732 14.8745 11.6056 14.8745 12.1503C14.8705 13.6713 13.6377 14.9041 12.1207 14.9041ZM32.2818 32.2753H27.5347V24.8425C27.5347 23.0694 27.5027 20.7919 25.0651 20.7919C22.5955 20.7919 22.2153 22.7211 22.2153 24.7144V32.2753H17.4722V16.9934H22.0271V19.0828H22.0912C22.7236 17.882 24.2726 16.6132 26.5861 16.6132C31.3972 16.6132 32.2818 19.7792 32.2818 23.8939V32.2753Z"
+                        fill="#2091f9"
+                      />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <section class="footer" id="footer">
+      <div class="container">
+        <div class="content-footer">
+          <div
+            class="row justify-content-lg-between text-center text-lg-start"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div class="col-12 col-lg-2">
+              <div class="column-content">
+                <h3>Pages</h3>
+                <ul class="list-link-footer mx-auto mx-lg-0">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Product</a></li>
+                  <li><a href="#">Pricing</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-lg-2">
+              <div class="column-content">
+                <h3>Tomothy</h3>
+                <ul class="list-link-footer mx-auto mx-lg-0">
+                  <li><a href="#">Eleanor Edwards</a></li>
+                  <li><a href="#">Ted Robertson</a></li>
+                  <li><a href="#">Annette Russell</a></li>
+                  <li><a href="#">Jennie Mckinney</a></li>
+                  <li><a href="#">Gloria Richards</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-lg-2">
+              <div class="column-content">
+                <h3>Jane Black</h3>
+                <ul class="list-link-footer mx-auto mx-lg-0">
+                  <li><a href="#">Philip Jones</a></li>
+                  <li><a href="#">Product</a></li>
+                  <li><a href="#">Colleen Russell</a></li>
+                  <li><a href="#">Marvin Hawkins</a></li>
+                  <li><a href="#">Bruce Simmmons</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="wrap-icon col-12 col-lg-4">
+              <div class="contain-icon-top">
+                <div
+                  class="wrap-item-top d-flex flex-column align-items-lg-start mx-auto mx-lg-0"
+                >
+                  <div class="map-item">
+                    <div class="wrap-svg">
+                      <svg
+                        width="26"
+                        height="33"
+                        viewBox="0 0 26 33"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_67_7924)">
+                          <path
+                            d="M13.0013 19.884C16.4941 19.884 19.3346 17.0435 19.3346 13.5506C19.3346 10.0578 16.4941 7.21729 13.0013 7.21729C9.50847 7.21729 6.66797 10.0578 6.66797 13.5506C6.66797 17.0435 9.50847 19.884 13.0013 19.884ZM13.0013 10.384C14.7477 10.384 16.168 11.8042 16.168 13.5506C16.168 15.297 14.7477 16.7173 13.0013 16.7173C11.2549 16.7173 9.83464 15.297 9.83464 13.5506C9.83464 11.8042 11.2549 10.384 13.0013 10.384Z"
+                            fill="#FFFFFF"
+                          />
+                          <path
+                            d="M11.7485 32.256C12.0164 32.4473 12.3375 32.5502 12.6668 32.5502C12.9961 32.5502 13.3172 32.4473 13.5851 32.256C14.0665 31.9155 25.3794 23.7471 25.3335 13.5505C25.3335 6.56637 19.6509 0.883789 12.6668 0.883789C5.68272 0.883789 0.000139393 6.56637 0.000139393 13.5425C-0.0457773 23.7471 11.2671 31.9155 11.7485 32.256ZM12.6668 4.05046C17.9061 4.05046 22.1668 8.31121 22.1668 13.5584C22.2001 20.5852 15.2191 26.8948 12.6668 28.9642C10.1161 26.8932 3.13356 20.582 3.16681 13.5505C3.16681 8.31121 7.42756 4.05046 12.6668 4.05046Z"
+                            fill="#FFFFFF"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_67_7924">
+                            <rect
+                              width="26"
+                              height="32"
+                              fill="white"
+                              transform="translate(0 0.717285)"
+                            />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </div>
+                    <a href="#">7480 Mockingbird Hill undefined </a>
+                  </div>
+                  <div class="phone-item">
+                    <div class="wrap-svg">
+                      <svg
+                        width="22"
+                        height="35"
+                        viewBox="0 0 22 35"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_67_7930)">
+                          <path
+                            d="M16.5417 1.17578H4.875C2.45417 1.17578 0.5 3.12995 0.5 5.55078V28.8841C0.5 31.3049 2.45417 33.2591 4.875 33.2591H16.5417C18.9625 33.2591 20.9167 31.3049 20.9167 28.8841V5.55078C20.9167 3.12995 18.9625 1.17578 16.5417 1.17578ZM13.625 30.3424H7.79167V28.8841H13.625V30.3424ZM18.3646 25.9674H3.05208V5.55078H18.3646V25.9674Z"
+                            fill="#FFFFFF"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_67_7930">
+                            <rect
+                              width="21"
+                              height="34"
+                              fill="white"
+                              transform="translate(0.5 0.217285)"
+                            />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </div>
+                    <a href="tel:02395550108">(239) 555-0108</a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="wrap-social d-flex justify-content-center justify-content-lg-start"
+              >
+                <ul class="navbar-nav d-flex flex-row">
+                  <li class="nav-item">
+                    <a class="nav-link social-icons" href="#"
+                      ><svg
+                        width="34"
+                        height="28"
+                        viewBox="0 0 34 28"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M33.6845 3.68535C32.4597 4.2137 31.1269 4.59394 29.754 4.74204C31.1793 3.89523 32.2467 2.55742 32.7559 0.979599C31.4184 1.77527 29.9531 2.33321 28.4251 2.62867C27.7865 1.94593 27.0141 1.40203 26.156 1.03086C25.298 0.659692 24.3727 0.469204 23.4379 0.471269C19.6554 0.471269 16.6134 3.53726 16.6134 7.2997C16.6134 7.82804 16.6775 8.35639 16.7815 8.86472C11.1179 8.56852 6.0666 5.86277 2.70842 1.72008C2.09652 2.76522 1.77587 3.95523 1.77981 5.16631C1.77981 7.53585 2.9846 9.62521 4.82179 10.854C3.7391 10.8114 2.68177 10.5138 1.73579 9.98544V10.0695C1.73579 13.3876 4.08131 16.1374 7.20734 16.7698C6.62039 16.9223 6.01659 17.0003 5.41017 17.002C4.96588 17.002 4.54561 16.958 4.12133 16.8979C4.98589 19.6037 7.50353 21.569 10.5015 21.633C8.15595 23.4702 5.21805 24.5509 2.02798 24.5509C1.4556 24.5509 0.927262 24.5309 0.378906 24.4668C3.40487 26.4081 6.9952 27.5288 10.8617 27.5288C23.4139 27.5288 30.2823 17.1301 30.2823 8.10422C30.2823 7.80803 30.2823 7.51184 30.2623 7.21565C31.5912 6.24301 32.7559 5.03823 33.6845 3.68535Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="social-icons" href="#"
+                      ><svg
+                        width="42"
+                        height="42"
+                        viewBox="0 0 42 42"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M35.7517 4.98962H6.29255C5.58409 4.98962 5.01172 5.562 5.01172 6.27046V35.7296C5.01172 36.438 5.58409 37.0104 6.29255 37.0104H35.7517C36.4601 37.0104 37.0325 36.438 37.0325 35.7296V6.27046C37.0325 5.562 36.4601 4.98962 35.7517 4.98962ZM32.0533 14.3357H29.4956C27.4903 14.3357 27.1021 15.2883 27.1021 16.6892V19.7752H31.8892L31.2648 24.6064H27.1021V37.0104H22.1108V24.6104H17.9361V19.7752H22.1108V16.2129C22.1108 12.0782 24.6365 9.82476 28.3268 9.82476C30.096 9.82476 31.613 9.95685 32.0573 10.0169V14.3357H32.0533Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="social-icons" href="#"
+                      ><svg
+                        width="42"
+                        height="42"
+                        viewBox="0 0 42 42"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M35.736 4.98962H6.27692C5.56847 4.98962 4.99609 5.562 4.99609 6.27046V35.7296C4.99609 36.438 5.56847 37.0104 6.27692 37.0104H35.736C36.4445 37.0104 37.0169 36.438 37.0169 35.7296V6.27046C37.0169 5.562 36.4445 4.98962 35.736 4.98962ZM14.4943 32.2753H9.74317V16.9934H14.4943V32.2753ZM12.1207 14.9041C11.5761 14.9041 11.0437 14.7425 10.5908 14.44C10.1379 14.1374 9.78498 13.7073 9.57655 13.2041C9.36812 12.7009 9.31359 12.1472 9.41984 11.613C9.5261 11.0789 9.78837 10.5882 10.1735 10.203C10.5586 9.81792 11.0493 9.55565 11.5835 9.4494C12.1177 9.34314 12.6714 9.39768 13.1745 9.6061C13.6777 9.81453 14.1078 10.1675 14.4104 10.6203C14.713 11.0732 14.8745 11.6056 14.8745 12.1503C14.8705 13.6713 13.6377 14.9041 12.1207 14.9041ZM32.2818 32.2753H27.5347V24.8425C27.5347 23.0694 27.5027 20.7919 25.0651 20.7919C22.5955 20.7919 22.2153 22.7211 22.2153 24.7144V32.2753H17.4722V16.9934H22.0271V19.0828H22.0912C22.7236 17.882 24.2726 16.6132 26.5861 16.6132C31.3972 16.6132 32.2818 19.7792 32.2818 23.8939V32.2753Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
